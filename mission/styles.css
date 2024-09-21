@@ -1,0 +1,83 @@
+/* What a font */
+body
+{
+    font-size: 20px;
+    line-height: 1.5;
+
+    font-family: 'Times New Roman';
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+#main_box
+{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 50px;
+    padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px; 
+    /* align-content: center;  */
+    max-width: 600px;
+}
+
+#university
+{
+    margin-bottom: 0px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+#underlined
+{
+    color: #006eb6;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 2px;
+}
+
+li
+{
+    padding-bottom: 20px;
+}
+
+footer
+{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#logo
+{
+    /* padding-top: 50px; */
+    width: 150px;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* height: 100px; */
+}
+
+h1, h5
+{
+    /* font-weight: normal; */
+    text-align: center;
+}
+
+h1
+{
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: -10px;
+}
+
+
+
+#italicize
+{
+    font-style: italic;
+}
