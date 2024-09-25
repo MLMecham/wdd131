@@ -81,3 +81,14 @@ h1
 {
     font-style: italic;
 }
+
+.dark
+{
+    background-color: #333;
+    color: white;
+}
+
+.dark #underlined
+{
+    color: #0096f7;
+}
