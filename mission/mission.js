@@ -11,7 +11,7 @@ function changeTheme(event)
         bodyElement.removeAttribute("class")
 
         let imgElement = document.querySelector("img");
-        imgElement.removeAttribute("src")
+        // imgElement.removeAttribute("src")
         imgElement.setAttribute("src", "images/byui-logo_blue.webp") 
     }
 
@@ -21,7 +21,7 @@ function changeTheme(event)
         bodyElement.setAttribute("class", "dark")
 
         let imgElement = document.querySelector("img");
-        imgElement.removeAttribute("src")
+        // imgElement.removeAttribute("src")
         imgElement.setAttribute("src", "images/byui-logo_white.png")
     }
 }
