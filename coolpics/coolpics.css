@@ -98,14 +98,6 @@ img{
 
 .show{
     display: grid;
-}
-
-/* litte media query */
-@media (max-width: 700px){
-    
-    ul{
-    
-    display: grid;
     gap: 10px;
     list-style: none;
 
@@ -116,6 +108,56 @@ img{
 
     padding: 0px;
     font-size: 1.5em;
+    margin-top: -10px;
+}
+
+.viewer {
+    position: fixed;         
+    top: 0;                  
+    left: 0;                 
+    bottom: 0;               
+    right: 0;                
+    background: rgba(0, 0, 0, 0.75); 
+    display: grid;           
+    grid-template-rows: auto 1fr; 
+    align-items: center;     
+    justify-items: center;   
+    z-index: 10;             
+    padding: 15px;
+    
+}
+
+.close-viewer {
+    color: white;            
+    background: transparent; 
+    border: none;           
+    font-size: 24px;        
+    cursor: pointer;       
+    /* align-items: right; */
+    justify-self: right;
+}
+
+.viewer img {
+    max-height: 100%;       
+    width: auto;           
+}
+
+/* litte media query */
+@media (max-width: 700px){
+    
+    ul{
+    
+    display: grid;
+    /* gap: 10px;
+    list-style: none;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+
+    padding: 0px;
+    font-size: 1.5em; */
     }
 
     ul{
@@ -129,8 +171,16 @@ img{
     }
 
     .menu{
-        margin-top: -30px;
+        margin-top: -15px;
     }
+
+    .button
+    {
+        background-color: #52489c;
+
+    }
+
+    
 
 
 }
@@ -146,18 +196,53 @@ img{
         background-color: azure;
     }
 
-    button{
+    .button{
         display:none;
+    
     }
 
     ul{
         list-style: none;
         display: flex;
-        gap: 1em;
+        gap: 1.5em;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         font-size: 1.5em;
     
     }
+
+    .viewer {
+        position: fixed;         
+        top: 0;                  
+        left: 0;                 
+        bottom: 0;               
+        right: 0;                
+        background: rgba(0, 0, 0, 0.75); 
+        display: grid;           
+        grid-template-rows: auto 1fr; 
+        align-items: center;     
+        justify-items: center;   
+        z-index: 10;             
+        padding: 50px;
+        margin: 25px;
+        
+    }
+    
+    .close-viewer {
+        color: white;            
+        background: transparent; 
+        border: none;           
+        font-size: 24px;        
+        cursor: pointer;       
+        /* align-items: right; */
+        justify-self: right;
+    }
+    
+    .viewer img {
+        max-height: 100%;       
+        width: auto;           
+    }
+    
+
 }
