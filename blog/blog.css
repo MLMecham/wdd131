@@ -1,0 +1,122 @@
+/* 
+Gold: #EFC69B
+Red: #AF1B3f
+Dark: #473144
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0;
+    background-color: azure;
+
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header{
+    
+}
+
+#title {
+    font-family: "Lora", Impact, serif;
+    color: #473144;
+    font-size: xxx-large;
+
+    text-align: center;
+
+}
+
+nav{
+    border-top: 2px solid #EFC69B;
+    border-bottom: 2px solid #EFC69B;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 55px 70px 65px 50px;
+
+    color: #AF1B3f;
+    list-style: none;
+
+    justify-content: end;
+    justify-items: end;
+    margin-right: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+#filter{
+    background: none;        /* Remove background */
+    border: none;            /* Remove border */
+    padding: 0;              /* Remove padding */
+    color: inherit;          /* Inherit text color */
+    font: inherit;           /* Inherit font styling */
+    cursor: pointer;         /* Show pointer on hover to indicate it's clickable */
+    
+}
+
+main{
+    /* background-color: blue; */
+}
+
+#all{
+    /* max-width: 600px;
+    margin: 0 auto; */
+    display: grid;
+    grid-template-columns: 2.25fr .75fr;
+    margin: 25px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#book-info{
+    display: grid;
+    grid-template-columns: .6fr 1.4fr;
+}
+
+h2{
+    color: #AF1B3f;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#author-image {
+    text-align: left;   
+    margin-left: 30px;        
+    
+}
+
+#descriptions{
+    font-size: 15px;
+    border-right: 2px solid #EFC69B;
+    margin-right: 20px;
+    text-align: right;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+#date{
+   font-size: 20px; 
+}
+
+#image-box{
+    margin-left: 30px;
+}
+
+#static-filter{
+    text-align: left;
+    border: 2px solid #EFC69B;
+    padding: 10px;
+    
+}
+
+
+footer{
+
+}
