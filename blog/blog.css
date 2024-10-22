@@ -17,6 +17,23 @@ header{
     
 }
 
+.skiptocontent {
+    position: absolute; /* Positioning for off-screen visibility */
+    top: -40px; /* Start off-screen */
+    left: 0; /* Align with left edge of the screen */
+    transition: top 0.3s; /* Smooth transition */
+}
+
+.skiptocontent a {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Use the current text color */
+}
+
+/* Make it visible when focused */
+.skiptocontent a:focus {
+    top: 0; /* Move it into view */
+}
+
 #title {
     font-family: "Lora", Impact, serif;
     color: #473144;
@@ -74,9 +91,12 @@ main{
     margin: 25px;
     margin-right: 50px;
     margin-left: 50px;
+
+    /* max-width: 1000px;
+    margin: auto; */
 }
 
-#book-info{
+.book-info{
     display: grid;
     grid-template-columns: .6fr 1.4fr;
 }
@@ -86,13 +106,14 @@ h2{
     font-family: Helvetica, Arial, sans-serif;
 }
 
-#author-image {
+.author-image {
     text-align: left;   
     margin-left: 30px;        
+    padding-right: 30px;
     
 }
 
-#descriptions{
+.descriptions{
     font-size: 15px;
     border-right: 2px solid #EFC69B;
     margin-right: 20px;
@@ -101,12 +122,12 @@ h2{
     padding-top: 0px;
 }
 
-#date{
+.date{
    font-size: 20px; 
 }
 
-#image-box{
-    margin-left: 30px;
+.image-box{
+    margin-left: 100px;
 }
 
 #static-filter{
