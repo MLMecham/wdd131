@@ -29,3 +29,12 @@ let totalGpa = intNumbers.reduce((sum, value) => {
 }, 0)
 const gpa = totalGpa / intNumbers.length
 document.querySelector('#gpa').innerHTML = gpa
+
+const fruits = ["watermelon", "peach", "apple", "tomato", "grape"] 
+const smallFruits = fruits.filter(fruit => fruit.length <= 6).join(", ")
+document.querySelector("#fruits").innerHTML = smallFruits
+
+numbers = [12, 34, 21, 54]
+luckyNumber = 21
+index = numbers.indexOf(21,0)
+document.querySelector("#lucky").innerHTML = index
