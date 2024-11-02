@@ -71,7 +71,7 @@ body{
 
 #cardNumber {
     width: 100%; /* Makes the input fill the entire width of its container */
-    padding: 4px; /* Optional: adds some padding inside the input for better spacing */
+    padding: 6px; /* Optional: adds some padding inside the input for better spacing */
     box-sizing: border-box; /* Ensures padding is included in the total width */
 }
 
@@ -82,7 +82,7 @@ body{
 
 #cardHolder{
     width: 100%;
-    padding: 4px;
+    padding: 6px;
     box-sizing: border-box;
 }
 
@@ -99,8 +99,12 @@ body{
 
 .expiration{
     width: 100%;
-    padding: 4px;
+    padding: 6px;
     box-sizing: border-box;
+}
+
+#expriation-container label{
+    letter-spacing: 1px;
 }
 
 #backGrid{
@@ -141,7 +145,7 @@ body{
 
 #bottom-right input{
     width: 100%;
-    padding: 4px;
+    padding: 6px;
     box-sizing: border-box;
 }
 
