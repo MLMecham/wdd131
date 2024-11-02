@@ -1,5 +1,5 @@
 body{
-    background-color: pink;
+    background-color: grey;
     margin-top: 50px;
 }
 
@@ -16,7 +16,7 @@ body{
     grid-template-rows: 1fr 8fr 1fr 1fr;
     gap: 10px;
 
-    background-color: pink;
+    background-color: grey;
 }
 
 #frontGrid{
