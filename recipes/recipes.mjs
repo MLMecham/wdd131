@@ -1,7 +1,7 @@
 const recipes = [
 	{
 		author: 'Provo High Culinary Students',
-		url: '',
+		url: 'https://www.youtube.com/watch?v=xvFZjo5PgG0',
 		isBasedOn: '',
 		cookTime: '30 Min',
 		datePublished: '2016-10-16',
@@ -169,7 +169,7 @@ const recipes = [
 	},
 	{
 		author: 'Shane Thompson',
-		url: '',
+		url: 'https://www.youtube.com/watch?v=xvFZjo5PgG0',
 		isBasedOn: '',
 		cookTime: '11 min',
 		datePublished: '2018-09-19',

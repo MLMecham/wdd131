@@ -12,7 +12,7 @@
     <title>Recipe Book - Delicous Recipes for Every Occasion</title>
     <meta name="description" content="Explore a variety of delicious recipes in our Recipe Book. From appetizers to desserts, find your favorite recipe here!">
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer></script>
 
 </head>
 <body>
@@ -21,7 +21,7 @@
             <img src="images\recipe-book.png" alt="Recipe Logo">
             <h1>RECIPEBOOK</h1>
         </div>
-        <divs id="search-div">
+        <div id="search-div">
             <label for="search"></label>
             <input type="text" name="search" id="search" placeholder="Find a recipe">
             <button id="search-button"><img src="images/search.svg" alt="search-icon"></button>
@@ -29,17 +29,19 @@
         </div>
     </header>
     <main>
-        <div class="recipe-container">
+        <!-- <div class="recipe-container">
             <div class="image-container">
                 <img src="images/apple-crisp.jpg" alt="A delicious apple crips">
             </div>
             <div class="right-container">
-                <div class="tag">
-                    <p>dessert</p>
-                </div>
+                
+                <ul class="tag">
+                    <li>Dessert</li>
+                    <li>Fruit</li>
+                </ul>
                 <div class="subtitle-rating">
                     <div class="name">
-                    <h2>APPLE CRISP</h2>
+                    <h2><a href="#">Apple Crisp</a></h2>
                     <span
                         class="rating"
                         role="img"
@@ -56,7 +58,7 @@
                     <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
     <footer>
         <div id="flaticon">
@@ -73,3 +75,8 @@
     
 </body>
 </html>
+
+<!-- This was the old form of tag -->
+<!-- <div class="tag">
+                    <p>dessert</p>
+                </div> -->
