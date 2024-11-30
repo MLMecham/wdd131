@@ -1,0 +1,244 @@
+<html lang="en-us"><head>
+    <meta charset="utf-8">
+    <title>Site Plan</title>
+    <link type="text/css" rel="stylesheet" href="styles/site-plan.css">
+</head>
+<!-- My plan is to have the front page have a gretting, purpose, goals,
+ and a way for the user to select topics and number of questions. I will use
+ query selectors to pass the information to the second page that will hold the
+ questions. The information will be topics, number of questions, or difficulty. 
+ The questions will be multiple choice, true or false, or free response.
+ JS on the first page will be to get the parameters and create a query selector.
+ The JS on the second page will be to dynamically generate the quiz and score it. 
+
+ Each question will have the following properties: Question, Type, Options, Answer, Points.
+
+ Navigation: Use window.location.href or localStorage to move between pages and persist data.
+
+ https://chatgpt.com/share/6744a67f-ed10-8011-a248-2be1fb33173e-->
+<body>
+    <header>
+        <h1>Brain Buster Site Plan</h1>
+        <h2>Mitchell Mecham</h2>
+        <h2>WDD 131-2</h2>
+        <!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+    </header>
+    <main>
+        <!-- ------------------------Steps 2-3------------------------------ -->
+        <hr>
+        <h2>Overview</h2>
+        <h3>Purpose</h3>
+        <p>My purpose for this website is to provide a fun learning oppertunity for anybody seeking a challenge.
+            The questions will range from easy to nigh impossible so all ages will be able to find something to do.
+            The website will ask the user what topics they want the questions to be about and how many then want to answer,
+            then the second page will be brain buster quiz.
+        </p>
+        <!-- change this -->
+
+        <h3>Audience</h3>
+        <p>My audience is for anybody who can read and likes challenges. There will be general trivial to riddles. Anybody can participate</p>
+        <!-- change this -->
+
+        <h3>Dynamic elements</h3>
+        <p>Page one will have multiple select elements with many options. The JavaScript will 
+            receive the selected options from the user when they click the "Start Quiz" button.
+            Once they click it, the JS will load a query selector to send their options to the second page of the site, the quiz.
+            Page two will dynamially load the quiz html from the questions pool. It will take the options passed from page one, filter the questions to that criteria, and then load the questions.
+            the submit quiz button will then be at the bottom of the second page. When clicked, it will score the users quiz and give them their results.
+        </p>
+        <!-- change this -->
+
+        <hr>
+        <h2>Branding</h2>
+        <h3>Website Logo</h3>
+        <!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+        <img src="images/brainbusterlogonoback.png" alt="Logo image">
+        <hr>
+        <h2>Style Guide</h2>
+
+        <!-- ------------------------Steps 4-8------------------------------ -->
+
+        <h3>Color Palette</h3>
+        <!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+        <!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+        Palette URL:
+        <a href="https://coolors.co/885053-e3b23c-f991cc-25291c-01295f">Color Palette</a>
+
+        <table class="colors">
+            <tbody>
+                <tr>
+                    <th>Primary</th>
+                    <th>Secondary</th>
+                    <th>Accent 1</th>
+                    <th>Accent 2</th>
+                </tr>
+                <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+                <tr>
+                    <td class="primary">[#396E94]</td>
+                    <td class="secondary">[#E7C24F]</td>
+                    <td class="accent1">[#A43312]</td>
+                    <td class="accent2">[#25291c]</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ------------------------Step 9------------------------------ -->
+
+        <h3>Typography</h3>
+        <!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+        <h4>
+            Heading Font: Raleway. Backup: sans-serrif
+            <!-- change this -->
+        </h4>
+        <h4>
+            Paragraph Font: 'Open Sans'. Backup: Lato
+            <!-- change this -->
+        </h4>
+        <h3>Normal paragraph example</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
+        <h3>Colored paragraph example</h3>
+        <p class="colored">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+        </p>
+
+        <!-- ------------------------Step 10------------------------------ -->
+
+        <h3>Navigation</h3>
+        <!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Page2</a>
+            <a href="#">Page3</a>
+        </nav>
+        <hr>
+
+        <h2>Content</h2>
+        <h3>Home page</h3>
+        <p>The home page is going to be a welcoming page that is warm and inviting</p>
+        <p>The purpose of this page is to explain to the user the reason the quiz exists, and to have the user enter information to be used generate their quiz. </p>
+
+        <p>Welcome to the Brain Buster's Quiz!</p>
+        <p>This quiz is designed with fun in mind, but that doesn't mean these questions are easy. Each question has a difficulty score assigned to it,
+             these scores start at 1 and end at 5. Difficulty 1 can be reliably answered by most elementary students, while difficulty 5 are tough to answer to those even
+             with graduate degrees because of the obscure topics they cover. All questions are either True-False questions or multiple choice, so even if the question has busted you brain, just give it your best guess.
+        </p>
+        <p>Below you may select the number of questions you want to answer, the difficutly of questions you want to answer, and the type of question. Please select to your liking and click on the start quize button below.</p>
+
+        <p>Select box with 1-10 as options</p>
+        <p>Select box with 1-5 or All, as options</p>
+        <p>Select box with true-false, multiple-choice, or both as options</p>
+
+        <p>Start Quiz Button</p>
+
+        <h3>Quiz Page</h3>
+        <p>[content, images, data for the subpage]</p>
+
+        <p>The content for this page will just be a list of 1-10 questions, each in their own cells and a submit quiz button at the buttom. After the quiz is submitted it will be graded and the users score will be shown. Under this will be a try again button that will take them back to the home page to make a new quiz</p>
+
+        <p>Because of the need for many questions to avoid repeats if possible, I currently have around 70. I will list 10 here. The rest can be found in the questions.mjs file in the final_project folder.</p>
+        <p>{
+            difficulty: 1,
+            question: "The Earth is round. True or False?",
+            type: "true-false",
+            points: 4,
+            answer: "true"
+        },
+        {
+            difficulty: 1,
+            question: "What is the chemical symbol for water?",
+            type: "multiple-choice",
+            points: 5,
+            answer: "h2o",
+            options: ["O2", "H2O", "CO2", "O3"]
+        },
+        {
+            difficulty: 1,
+            question: "The Sun rises in the West. True or False?",
+            type: "true-false",
+            points: 4,
+            answer: "false"
+        },
+        {
+            difficulty: 1,
+            question: "Which color is a banana?",
+            type: "multiple-choice",
+            points: 5,
+            answer: "yellow",
+            options: ["Green", "Yellow", "Red", "Blue"]
+        },
+        {
+            difficulty: 1,
+            question: "The moon is a planet. True or False?",
+            type: "true-false",
+            points: 4,
+            answer: "false"
+        },
+        {
+            difficulty: 1,
+            question: "Which of these is the smallest continent?",
+            type: "multiple-choice",
+            points: 5,
+            answer: "australia",
+            options: ["Africa", "Asia", "Australia", "Europe"]
+        },
+        {
+            difficulty: 1,
+            question: "Mount Everest is the tallest mountain. True or False?",
+            type: "true-false",
+            points: 4,
+            answer: "true"
+        },
+        {
+            difficulty: 1,
+            question: "Which animal is known as the King of the Jungle?",
+            type: "multiple-choice",
+            points: 5,
+            answer: "lion",
+            options: ["Elephant", "Lion", "Tiger", "Bear"]
+        },</p>
+        <h2>Wireframes</h2>
+        <p>
+            Create two wireframes for your site. One for each page and list them
+            here
+        </p>
+
+        <h3>Home</h3>
+        <p>Desktop</p>
+        <img src="images/wireframe1.jpg" alt="wireframe 1">
+        
+        <p>Mobile</p>
+        <img src="images/wireframe2.jpg">
+        <p>
+            [Any additional details about home that the wireframe does not make
+            clear]
+        </p>
+
+        <h3>Quiz Page</h3>
+        <p>Desktop</p>
+        <img src="images/wireframe3.jpg">
+        <img src="images/wireframe4.jpg">
+
+        <p>mobile</p>
+        <img src="images/wireframe5.jpg">
+        <img src="images/wireframe6.jpg">
+        <p>
+            [Any additional details about page 2 that the wireframe does not make
+            clear]
+        </p>
+        <p>Only the desktop version will have the option to look at the wrong answer list. The wrong answer list will look like the normal question format, but the wrong answer will be a shade of red and the right one will be green</p>
+    </main>
+
+
