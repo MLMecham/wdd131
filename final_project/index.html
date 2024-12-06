@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainBusters Home Page</title>
+    <link type="text/css" rel="stylesheet" href="styles/homepage.css">
+    <script src="home.js" defer></script>
+
+    <!-- Make a Favicon for this page -->
+</head>
+<body>
+    <header>
+        <div id="logo-div">
+            <img id="logo-img" src="images/brainbusterlogonoback.png" alt="Brainbuster Quis Logo">
+        </div>
+        <div id="navigation-div">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">Feedback</a>
+        </div>
+    </header>
+    <main>
+        <div id="content">
+            <div id="welcome-div">
+                <h1>Welcome to Brain Busters!</h1>
+                <p>This quiz is designed with fun in mind, but that doesn't mean these questions are easy. Each question has a difficulty score assigned to it,
+                    these scores start at 1 and end at 5. Difficulty 1 can be reliably answered by most elementary students, while difficulty 5 are tough to answer to those even
+                    with graduate degrees because of the obscure topics they cover. All questions are either True-False questions or multiple choice, so even if the question has busted you brain, just give it your best guess.
+                </p>
+            </div>
+            <form>
+                <div id="selection-div">
+                    <div id="numberselect-div">
+                        <label for="numberquestions">How many questions?</label>
+                        <select id="numberquestions" name="numberquestions">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5" selected>5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div id="difficultyselect-div">
+                        <label for="difficultyquestions">What diffuculty?</label>
+                        <select id="difficultyquestions" name="difficultyquestions">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="all" selected>ANY</option>
+                            
+                        </select>
+                    </div>
+                    <div id="typeselect-div">
+                        <label for="typequestions">What type of questions?</label>
+                        <select id="typequestions" name="typequestions">
+                            <option value="1">True or False</option>
+                            <option value="2">Multiple Choice</option>
+                            <option value="all" selected>ANY</option>
+                            
+                        </select>
+                    </div>
+                </div>
+
+                <!-- <div id="start-div">
+                    <a href="quizpage.html">
+                        <button id="startquiz">Start Quiz</button>
+                    </a>
+                </div> -->
+                <div id="start-div">
+                    
+                    <button type="button" id="startquiz">Start Quiz</button>
+                    
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Author: Mitchell Mecham 2024</p>
+        <div id="github-div">
+            <a href="https://github.com/MLMecham/wdd131" target="_blank">Check Out my Github</a>
+
+        </div>
+    </footer>
+    
+</body>
+</html>

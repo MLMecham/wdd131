@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainBuster Quiz</title>
+    <link type="text/css" rel="stylesheet" href="styles/homepage.css">
+    <script src="main.js" type="module" defer></script>
+
+</head>
+<body>
+    <header>
+        <div id="logo-div">
+            <img id="logo-img" src="images/brainbusterlogonoback.png" alt="Brainbuster Quis Logo">
+        </div>
+        <div id="navigation-div">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">Feedback</a>
+        </div>
+    </header>
+    <main>
+        <div id="content2">
+            <div id="quiz-div">
+                <h1>
+                    Brain Buster Time!
+                </h1>
+
+                
+
+
+
+                <div id="question-div">
+
+                    <div id="question1" class="multi-choice-container">
+                        <div class="question-header">
+                            <h2>
+                                Difficulty: 2
+                            </h2>
+                            <h2>
+                                Points: 4
+                            </h2>
+                        </div>
+                        <div class="question-text">
+                            
+                            <p>
+                                What is the largest desert in the world?
+                            </p>
+                        </div>
+                        <div id="question1" class="question-multi">
+                            <div class="top-left">
+                                <input type="radio" name="1" id="sahara">
+                                <label for="sahara">Sahara</label>
+                            </div>
+                            <div class="top-right">
+                                <input type="radio" name="1" id="kalahari">
+                                <label for="kalahari">Kalahari</label>
+                            </div>
+                            <div class="bottom-left">
+                                <input type="radio" name="1" id="arctic">
+                                <label for="arctic">Arctic</label>
+                            </div>
+                            <div class="bottom-right">
+                                <input type="radio" name="1" id="antarctic">
+                                <label for="antarctic">Antarctic</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="question2" class="true-false-container">
+                        <div class="question-header">
+                            <h2>
+                                Difficulty: 1
+                            </h2>
+                            <h2>
+                                Points: 3
+                            </h2>
+                        </div>
+                        <div class="question-text">
+                            <p>
+                                Is a tomato a fruit? True or False?
+                            </p>
+                        </div>
+                        <div class="question-true-false">
+                            <div class="left">
+                                <input type="radio" name="2" id="2false">
+                                <label for="2false">False</label>
+                            </div>
+                            
+                            <div class="right">
+                                <input type="radio" name="2" id="2true">
+                                <label for="2true">True</label>
+                            </div>
+                            
+                            
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="submit-div">
+                <button id="submit-quiz">Submit Quiz</button>
+            </div>
+        
+
+
+
+            <div id="results" class="hide">
+                <h1>Congrats</h1>
+
+                <div id="scoring">
+                    <h2 id="score">Score: 10/10</h2>
+                    <h2 id="points">Points: 37</h2>
+                </div>
+                <div id="results-buttons">
+                    <button id="view-missed" class="results-button">
+                        See Missed Questions
+                    </button>
+                    
+                    <button id="try-again" class="results-button">
+                        Try Again
+                    </button>
+                </div>
+
+            </div>
+
+            <div id="view-missed-div">
+                <!-- <div class="true-false-container">
+
+                </div>
+
+                <div class="true-false-container">
+                    <div class="question-header">
+                        <h2>
+                            Difficulty: 1
+                        </h2>
+                        <h2>
+                            Points: 3
+                        </h2>
+                    </div>
+                    <div class="question-text">
+                        <p>
+                            Is a tomato a fruit? True or False?
+                        </p>
+                    </div>
+                    <div class="question-true-false">
+                        <div class="left-result" >
+                            <p>Your Answer:</p>
+                            <p class="wrong-answer">True</p>
+                        </div>
+                        
+                        <div class="right-result" >
+                            <p>Correct Answer: </p>
+                            <p class="right-answer"> False</p>
+                        </div>
+                        
+                        
+                    
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Author: Mitchell Mecham 2024</p>
+        <div id="github-div">
+            <a href="https://github.com/MLMecham/wdd131" target="_blank">Check Out my Github</a>
+
+        </div>
+    </footer>
+</body>
+</html>
